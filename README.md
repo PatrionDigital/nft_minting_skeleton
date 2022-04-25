@@ -1,7 +1,13 @@
 # ![ReExoBits Logo](http://greenzeta.com/wp-content/uploads/2021/11/article_icon.png) nft-minting-website-example
 ## ReExoBits
 
-A complete NFT website with Minting and Gallery features. Based off of the ExoBits website: [ExoBitsNFT.com](https://exobitsnft.com/). This project accompanies the medium article ["How To Build An NFT Website"](#article)
+A complete NFT website with Minting and Gallery features. 
+
+Forked from [mwilber/nft-minting-website-example](https://github.com/mwilber/nft-minting-website-example)
+
+Based off of the ExoBits website: [ExoBitsNFT.com](https://exobitsnft.com/).
+
+This project accompanies the medium article ["How To Build An NFT Website"](#article)
 
 ![ReExoBits ScreenShot](http://greenzeta.com/wp-content/uploads/2021/11/reexobits_preview.png)
 
@@ -21,7 +27,7 @@ This project accompanies ["How To Build An NFT Website"](https://medium.com/@gr
 Clone this repo and enter the project directory:
 
 ```sh
-$ git clone https://github.com/mwilber/nft-minting-website-example
+$ git clone https://github.com/PatrionDigital/nft_minting_skeleton
 $ cd nft_minting_skeleton
 ```
 Install dependencies:
@@ -52,3 +58,5 @@ $ npm run build
 
 ## React
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Layout and Grid with [Bootstrap](https://getbootstrap.com/) and [react-bootstrap](https://react-bootstrap.netlify.app/).
