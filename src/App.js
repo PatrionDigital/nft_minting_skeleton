@@ -5,6 +5,7 @@ import {
 	Route,
 	Link
 } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 
 import './App.css';
 
