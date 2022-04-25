@@ -22,7 +22,7 @@ Clone this repo and enter the project directory:
 
 ```sh
 $ git clone https://github.com/mwilber/nft-minting-website-example
-$ cd nft-minting-website-example
+$ cd nft_minting_skeleton
 ```
 Install dependencies:
 ```sh
@@ -30,10 +30,20 @@ $ npm install
 ```
 
 ## Development
+Start up the Truffle Development Console
+```sh
+$ truffle develop
+```
+Compile and Migrate the contracts onto the Development Chain
+```
+truffle(develop)> compile
+truffle(develop)> migrate
+```
 Run the local webpack-dev-server with livereload and autocompile on [http://localhost:3000/](http://localhost:3000/)
 ```sh
 $ npm start
 ```
+
 ## Deployment
 Build the current application
 ```sh

@@ -5,7 +5,7 @@ import ExobitsABI from '../contract/ReExoBits.json';
 
 export default function Login(props) {
 
-	const contractAddress = "0xE7046373c0D9e74529362B0A98F9F7784bF46B4D";
+	//const contractAddress = "0xE7046373c0D9e74529362B0A98F9F7784bF46B4D";
 
 	const DoConnect = async () => {
 
@@ -17,10 +17,12 @@ export default function Login(props) {
 			await window.ethereum.request({ method: 'eth_requestAccounts' })
 			// Use web3 to get the user's accounts.
 			const accounts = await web3.eth.getAccounts();
-			// Get an instance of the contract sop we can call our contract functions
+			// Get an instance of the contract so we can call our contract functions
+			const networkId = await web3.eth.net.getId();
+			const contractNetwork = ExobitsABI.networks[networkId];
 			const instance = new web3.eth.Contract(
-				ExobitsABI, 
-				contractAddress
+				ExobitsABI.abi, 
+				contractNetwork && contractNetwork.address
 			);
 			props.callback({ web3, accounts, contract: instance });
 
